@@ -19,6 +19,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-bottom: 32px;
 }
 
 .container {
@@ -28,8 +29,6 @@ img {
 }
 
 .page-header {
-  background-color: #ffffff;
-  display: block;
   padding-top: 76px;
   margin-bottom: 104px;
 }
@@ -54,6 +53,7 @@ img {
 }
 
 .site-navigation a {
+  display: block;
   font-size: 14px;
   color: #626262;
   text-transform: uppercase;
@@ -90,11 +90,13 @@ img {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
+  margin: 0 0 32px 0;
 }
 
 h3 {
   font-size: 30px;
   line-height: 36px;
+  margin: 0 0 32px 0;
 }
 
 .paragraph-style {
