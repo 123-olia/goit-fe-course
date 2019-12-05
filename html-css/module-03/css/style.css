@@ -22,7 +22,7 @@ img {
 }
 
 .container {
-  width: 901px;
+  width: 900px;
   background-color: #ffffff;
   margin: 0 auto;
 }
@@ -30,6 +30,8 @@ img {
 .page-header {
   background-color: #ffffff;
   display: block;
+  padding-top: 76px;
+  margin-bottom: 104px;
 }
 
 /* site navigation */
@@ -40,13 +42,11 @@ img {
   list-style: none;
   text-align: center;
   text-decoration: none;
+  font-size: 0;
 }
 
 .site-navigation li {
   display: inline-block;
-  padding: 76px 0;
-  width: 113px;
-  height: 42px;
 }
 
 .site-navigation li:not(:last-child) {
@@ -54,6 +54,7 @@ img {
 }
 
 .site-navigation a {
+  font-size: 14px;
   color: #626262;
   text-transform: uppercase;
   text-decoration: none;
@@ -67,15 +68,20 @@ img {
 
 /*main content */
 
+.section-style {
+  font-size: 0;
+  padding-bottom: 20px;
+  /* margin-bottom: 70px; */
+}
+
 .article-content {
   width: 420px;
   display: inline-block;
-  margin-top: 80px;
-  margin-right: 57px;
+  margin-right: 60px;
   margin-bottom: 60px;
 }
 
-.article-content:nth-child(2n) {
+.article-content:nth-child(odd) {
   margin-right: 0;
 }
 
@@ -83,6 +89,7 @@ img {
   font-family: "Ubuntu", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 14px;
 }
 
 h3 {
@@ -90,9 +97,44 @@ h3 {
   line-height: 36px;
 }
 
-button {
+.paragraph-style {
+  font-family: "Playfair Display", "Times", serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* site button */
+.site-button {
   font-size: 20px;
   text-transform: capitalize;
-  margin-bottom: 70px;
-  margin-left: 395px;
+  display: block;
+  margin: 0 auto;
+}
+
+.site-button:hover {
+  background-color: #c0c0c0;
+}
+
+.site-button:focus {
+  border: 3px, solid, #ff0000;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
