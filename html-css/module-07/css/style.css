@@ -1,26 +1,26 @@
 @font-face {
-  src: url(/fonts/droid-serif.woff);
+  src: url(../fonts/droid-serif.woff);
   font-family: "DroidSerif";
   font-size: 16px;
   font-weight: normal;
 }
 
 @font-face {
-  src: url(/fonts/montserrat.woff);
+  src: url(../fonts/montserrat.woff);
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: normal;
 }
 
 @font-face {
-  src: url(/fonts/roboto-slab-regular.woff);
+  src: url(../fonts/roboto-slab-regular.woff);
   font-family: "RobotoSlab";
   font-size: 16px;
   font-weight: normal;
 }
 
 @font-face {
-  src: url(/fonts/wisdom-script.woff);
+  src: url(../fonts/wisdom-script.woff);
   font-family: "Wisdom";
   font-size: 16px;
   font-weight: normal;
@@ -172,8 +172,7 @@ header {
 }
 
 .service-name {
-  margin: 0;
-  padding: 108px 0 20px;
+  margin: 108px 0 20px;
   font-size: 18px;
   font-weight: 900;
   font-family: "Montserrat";
@@ -191,20 +190,18 @@ header {
 /*SECTION CONTACT US*/
 
 .contact-us {
-  width: 1400px;
   background-color: #222222;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-  padding-bottom: 75px;
+  padding: 110px 0 75px;
   margin: 0 auto;
 }
 
 .black-background {
   color: #ffffff;
-  padding: 110px 0 25px;
-  margin: 0;
+  margin-bottom: 25px;
 }
 
 .contact-form {
