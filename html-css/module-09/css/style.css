@@ -42,9 +42,9 @@ img {
 
 /*HEADER*/
 
-.header {
+/* .header {
   min-width: 180px;
-}
+} */
 
 .page-nav {
   min-height: 170px;
@@ -92,7 +92,7 @@ img {
 /*SECTION PROMO*/
 .promo {
   padding: 20px 20px 140px;
-  width: 320px;
+  /* width: 320px; */
 }
 
 .promo-title {
@@ -101,8 +101,9 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 20px;
   width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .promo-description {
@@ -111,7 +112,8 @@ img {
   color: #ffffff;
   line-height: 1.2;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .promo-btn {
@@ -228,7 +230,7 @@ img {
 
 .partner-name {
   font-size: 14px;
-  font-family: "Myriad Pro";
+  font-family: "Montserrat";
   font-weight: 700;
   color: rgb(51, 51, 51);
   line-height: 1.2;
@@ -239,7 +241,7 @@ img {
 
 .partner-description {
   font-size: 14px;
-  font-family: "Myriad Pro";
+  font-family: "Roboto";
   color: rgb(102, 102, 102);
   line-height: 1.2;
   font-weight: 300;
@@ -285,4 +287,38 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* MEDIA */
+@media (min-width: 768px) {
+  .promo-title {
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .promo-description {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .partners-title {
+    margin-bottom: 40px;
+  }
+
+  .list {
+    width: 492px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+
+  .list {
+    width: 100%;
+    padding-bottom: 0;
+  }
 }
