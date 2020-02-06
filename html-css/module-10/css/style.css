@@ -209,9 +209,10 @@ header {
   margin: 0 auto;
 }
 
-.button:hover {
+.button--more:hover {
   background-color: #ffffff;
   color: #f38181;
+  cursor: pointer;
 }
 
 /* section services */
