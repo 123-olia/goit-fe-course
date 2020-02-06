@@ -94,9 +94,9 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 70px;
 }
 
@@ -123,12 +123,22 @@ header {
 }
 
 .site-navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   text-transform: uppercase;
+  position: relative;
+}
+
+.site-navigation__link svg {
+  width: 18px;
+  height: 18px;
 }
 
 .site-navigation__link::after {
   content: "";
+  position: absolute;
   display: block;
   width: 100%;
   height: 3px;
@@ -153,7 +163,7 @@ header {
   fill: #ffffff;
 }
 
-.site-navigation:hover svg {
+.site-navigation__link:hover svg {
   fill: #fce38a;
 }
 
@@ -269,27 +279,27 @@ header {
   left: 20px;
 }
 
-.service-list-item--alarm::before {
+.service-list__item--alarm::before {
   background-image: url(../img/service-icons/alarm.png);
 }
 
-.service-list-item--line-graph::before {
+.service-list__item--line-graph::before {
   background-image: url(../img/service-icons/line-graph.png);
 }
 
-.service-list-item--computer::before {
+.service-list__item--computer::before {
   background-image: url(../img/service-icons/computer.png);
 }
 
-.service-list-item--book::before {
+.service-list__item--book::before {
   background-image: url(../img/service-icons/book.png);
 }
 
-.service-list-item--home::before {
+.service-list__item--home::before {
   background-image: url(../img/service-icons/home.png);
 }
 
-.service-list-item--image::before {
+.service-list__item--image::before {
   background-image: url(../img/service-icons/image.png);
 }
 
@@ -411,8 +421,8 @@ header {
 
 .gradient__link svg {
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 26px;
   z-index: 45;
   fill: #f38181;
 }
