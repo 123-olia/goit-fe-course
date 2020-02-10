@@ -1,0 +1,33 @@
+.section {
+  margin-bottom: 100px;
+}
+
+.section__title {
+  @include font-settings(30px, 50px);
+  // font-size: 30px;
+  // line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: $main-text-color;
+  text-transform: uppercase;
+  margin: 0 auto 66px;
+
+  &-span {
+    @include font-settings(24px, 29px);
+    // font-size: 24px;
+    //   line-height: 29px;
+    display: block;
+    font-family: $accent-font-stack;
+    text-transform: none;
+  }
+
+  &::after {
+    @include pseudo($display: block);
+    // content: '';
+    // display: block;
+    background-color: $secondary-accent-color;
+    width: 60px;
+    height: 3px;
+    margin: 42px auto 0;
+  }
+}

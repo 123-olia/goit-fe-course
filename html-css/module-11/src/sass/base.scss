@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:hover {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+body {
+  font-family: $main-font-stack;
+  color: #999999;
+  background-color: $primary-white-color;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  // background-color: #111111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,17 @@
+.page-nav {
+  @include center-flex('ver');
+  // display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.page-nav__logo {
+  @include font-settings(30px, 36px);
+  // font-size: 30px;
+  // line-height: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  align-self: center;
+}

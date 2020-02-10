@@ -1,0 +1,49 @@
+.banner__title {
+  @include font-settings(150px, 0.933);
+  // font-size: 150px;
+  // line-height: 0.933;
+
+  font-family: $main-font-stack;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  width: 820px;
+  margin: 0 auto;
+  margin-bottom: 125px;
+}
+
+.banner__span {
+  @include font-settings(72px, 1.2);
+  // font-size: 72px;
+  // line-height: 1.2;
+  display: block;
+  font-family: $accent-font-stack;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.button--more {
+  @include font-settings(14px, 1.2);
+  // font-size: 14px;
+  // line-height: 1.2;
+  display: block;
+  font-family: $main-font-stack;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid #ffffff;
+  background-color: #00000000;
+  min-width: 164px;
+  min-height: 44px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $secondary-accent-color;
+    cursor: pointer;
+  }
+}
